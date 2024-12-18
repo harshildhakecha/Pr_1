@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Collection Manager</h1>
+        
+        <!-- Add Movie Form -->
+        <div class="add-movie">
+            <h2>Add a Movie</h2>
+            <form id="movie-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="genre" placeholder="Genre" required>
+                <input type="number" id="rating" placeholder="Rating (1-10)" min="1" max="10" required>
+                <input type="number" id="releaseYear" placeholder="Release Year" required>
+                <button type="submit">Add Movie</button>
+            </form>
+        </div>
+
+        <!-- Filter by Genre -->
+        <div class="filter-genre">
+            <h2>Filter by Genre</h2>
+            <select id="genre-filter">
+                <option value="">Select Genre</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+            </select>
+            <button onclick="filterMoviesByGenre()">Filter</button>
+        </div>
+
+        <!-- Movie List -->
+        <div class="movie-list">
+            <h2>Movie Collection</h2>
+            <ul id="movie-list"></ul>
+        </div>
+
+        <!-- Additional Filters -->
+        <div class="additional-filters">
+            <button onclick="findHighestRatedMovie()">Highest Rated Movie</button>
+            <button onclick="getMovieTitles()">Get Movie Titles</button>
+            <button onclick="moviesAfterYear()">Movies After Year 2010</button>
+        </div>
+
+        <!-- Display results -->
+        <div class="results">
+            <h2>Results</h2>
+            <p id="result-output"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

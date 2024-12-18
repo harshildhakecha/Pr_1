@@ -1,0 +1,72 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Section styling */
+.add-movie, .filter-genre, .movie-list, .additional-filters {
+    margin: 20px 0;
+}
+
+.add-movie input, .filter-genre select {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Movie List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+/* Additional Filter Buttons */
+.additional-filters button {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Results Output */
+.results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
